@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typewriter Offer</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="promotion.html">Promotion Details</a></li>
+                <li><a href="about.html">About the Product</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="support.html">Support</a></li>
+                <li><a href="corporate.html">Corporate Information</a></li>
+                <li><a href="shop.html">Online store</a></li>
+            </ul>
+        </nav>
+        <h1>How to Take Advantage of This Offer</h1>
+    </header>
+    <main>
+        <p>To make the most of this promotion, simply visit our online store, select your preferred typewriter, and the discount will be applied automatically at checkout. Don’t forget to use the promo code TYPE20 to unlock the special offers.</p>
+        
+        <form id="typewriterForm">
+            <label for="typewriter">Choose your typewriter:</label>
+            <select id="typewriter" name="typewriter">
+                <option value="classic">Classic Typewriter</option>
+                <option value="modern">Modern Typewriter</option>
+            </select>
+            <button type="submit">Buy Now</button>
+        </form>
+        
+        <div id="orderForm" style="display:none;">
+            <h2>Complete Your Purchase</h2>
+            <form id="purchaseForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="address">Shipping Address:</label>
+                <textarea id="address" name="address" required></textarea>
+                
+                <label for="promoCode">Promo Code:</label>
+                <input type="text" id="promoCode" name="promoCode" placeholder="TYPE20" required>
+                
+                <button type="submit">Submit Order</button>
+            </form>
+        </div>
+        
+        <div id="confirmationMessage" style="display:none;">
+            <p>Your order is being processed. Thank you for your purchase!</p>
+            <a href="index.html">Return to Home</a>
+        </div>
+
+        <div id="feedbackSection">
+            <h2>Customer Feedback</h2>
+            <div class="feedback">
+                <h3>John Doe</h3>
+                <p>Amazing product! The classic typewriter brought back so many memories.</p>
+            </div>
+            <div class="feedback">
+                <h3>Jane Smith</h3>
+                <p>Love the modern typewriter. It's so smooth and elegant.</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Typewriter Store</p>
+    </footer>
+    <script src="scripts/shop-scripts.js"></script>
+</body>
+</html>
